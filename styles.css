@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header a {
+  text-decoration: none;
+  font-family: "solvent";
+  font-weight: 400;
+  font-size: 4rem;
+  font-style: normal;
+  margin-left: 1%;
+  color: #8a2e00;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  border: 0.5px solid #8a2e00;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.main_seasons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8%;
+}
+
+.main_seasons a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-family: "Annie Use Your Telescope", cursive;
+  font-weight: 400;
+  font-size: 3rem;
+  font-style: normal;
+  color: #8a2e00;
+  position: relative;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+  margin-top: 10%;
+}
+
+.main_seasons a:hover {
+  border-bottom: 2px solid #8a2e00;
+}
+
+.svampe {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+/* --------------------------------- MOBILESITE --------------------------------- */
+@media only screen and (max-width: 800px) {
+  .svampe {
+    display: none;
+  }
+}
