@@ -1,3 +1,4 @@
+/* --------------------------------- STYLING --------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -35,14 +36,7 @@ header {
   z-index: 1000;
 }
 
-.main_seasons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 8%;
-}
-
+/* seasons site */
 .main_seasons a {
   display: block;
   margin-bottom: 10px;
@@ -62,6 +56,16 @@ header {
   border-bottom: 2px solid #8a2e00;
 }
 
+/* --------------------------------- LAYOUT --------------------------------- */
+/* season site */
+.main_seasons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8%;
+}
+
 .svampe {
   position: fixed;
   bottom: 0;
@@ -69,7 +73,8 @@ header {
   transform: translateX(-50%);
   z-index: 1000;
 }
-/* --------------------------------- LAYOUT --------------------------------- */
+
+/* svampe site */
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
