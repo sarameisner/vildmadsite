@@ -69,10 +69,20 @@ header {
   transform: translateX(-50%);
   z-index: 1000;
 }
+/* --------------------------------- LAYOUT --------------------------------- */
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
 
 /* --------------------------------- MOBILESITE --------------------------------- */
 @media only screen and (max-width: 800px) {
   .svampe {
+    display: none;
+  }
+
+  .løvtræ {
     display: none;
   }
 }
