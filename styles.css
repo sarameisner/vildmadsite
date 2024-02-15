@@ -35,6 +35,15 @@ header {
   z-index: 1000;
 }
 
+a.enkeltesvampe {
+  text-decoration: none;
+  color: #000;
+}
+
+a.enkeltesvampe:hover {
+  opacity: 0.6;
+}
+
 .main_seasons {
   display: flex;
   flex-direction: column;
