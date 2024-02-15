@@ -44,6 +44,13 @@ a.enkeltesvampe:hover {
   opacity: 0.6;
 }
 
+.svampUnderside {
+  max-width: 800px;
+  margin: 100px auto;
+  display: grid;
+  gap: 20px;
+}
+
 .main_seasons {
   display: flex;
   flex-direction: column;
