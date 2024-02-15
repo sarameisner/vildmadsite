@@ -28,6 +28,7 @@ function svampeliste(svampe) {
 
   clone.querySelector(".enkeltesvampe").href = `svamp.html?id=${id}`;
   clone.querySelector("h2").textContent = svampe.name;
+  clone.querySelector("img").src = svampe.image;
 
   const parentElement = document.querySelector("main");
   parentElement.appendChild(clone);
