@@ -13,6 +13,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Annie Use Your Telescope";
+  color: #8c6239;
 }
 
 header a {
@@ -34,6 +36,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
+  background-color: #f1e8dd;
 }
 
 /* seasons site */
@@ -42,14 +45,14 @@ header {
   margin-bottom: 10px;
   text-decoration: none;
   font-family: "Annie Use Your Telescope", cursive;
-  font-weight: 400;
-  font-size: 3rem;
+  font-size: 2rem;
   font-style: normal;
   color: #8a2e00;
   position: relative;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.3s ease;
-  margin-top: 10%;
+  margin-top: 5%;
+  text-transform: uppercase;
 }
 
 .main_seasons a:hover {
