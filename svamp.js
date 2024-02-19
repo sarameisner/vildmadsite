@@ -25,5 +25,6 @@ function singleSvamp(enkeltSvamp) {
   document.querySelector(".application").textContent = svamp.application;
   document.querySelector(".storage").textContent = svamp.storage;
   document.querySelector(".replacement").textContent = svamp.replacement;
-  document.querySelector("img").src = svamp.image;
+  document.querySelector(".main_image").src = svamp.image;
+  document.querySelector(".recipes_image").src = svamp.recipe_image;
 }
