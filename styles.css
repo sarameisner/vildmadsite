@@ -88,6 +88,19 @@ header {
 }
 
 /* svampe site */
+.backbutton {
+  max-width: 6%;
+  position: relative;
+  top: 90px;
+  left: 15px;
+}
+
+.svamp_body {
+  background-image: url(img/svampbg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -96,7 +109,9 @@ header {
 }
 
 .løvtræ {
-  max-width: 70%;
+  max-width: 75%;
+  margin-top: 10%;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 }
 
 .recipes_image {
@@ -106,7 +121,12 @@ header {
 
 .svampUnderside {
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.7;
+}
+
+.svampUnderside p {
+  font-size: 1.2rem;
+  font-weight: 100;
 }
 
 .svampUnderside h1 {
@@ -114,11 +134,24 @@ header {
 }
 
 .svampUnderside h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 200;
 }
 
-/* Svampeliste 
-*/
+.svamp_kitchen {
+  text-align: center;
+  max-width: 40%;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 1rem auto;
+}
+
+.svamp_kitchen h4 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+/* svampeliste site */
 
 .main_svampeliste {
   display: grid;
@@ -142,6 +175,8 @@ header {
   width: 150px;
   border-radius: 100%;
   margin: 0 auto;
+  border: 0.5px solid #8a2e00;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 }
 
 /* --------------------------------- MOBILESITE --------------------------------- */
@@ -162,5 +197,23 @@ header {
   body {
     background-image: inherit;
     background-color: #f0e6da;
+  }
+
+  .grid_1-1 {
+    grid-template-columns: 1fr;
+    margin: 5rem auto;
+    padding: 0 1rem;
+  }
+  .backbutton {
+    display: none;
+  }
+
+  .svamp_kitchen {
+    max-width: 90%;
+  }
+
+  .recipes_image {
+    max-width: 90%;
+    margin-left: 3%;
   }
 }
