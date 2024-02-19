@@ -10,6 +10,7 @@ img {
   height: auto;
   display: block;
 }
+
 body {
   background-image: url(img/bg.svg);
   background-repeat: no-repeat;
@@ -82,6 +83,10 @@ header {
   z-index: 1000;
 }
 
+.svampe.svampe-liste {
+  display: none;
+}
+
 /* svampe site */
 .grid_1-1 {
   display: grid;
@@ -111,6 +116,34 @@ header {
 .svampUnderside h4 {
   font-size: 1.5rem;
 }
+
+/* Svampeliste 
+*/
+
+.main_svampeliste {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 100px 0 250px;
+}
+
+.main_svampeliste a {
+  color: #8c6239;
+  text-decoration: none;
+}
+
+.main_svampeliste a:hover {
+  opacity: 0.6;
+}
+
+.main_svampeliste img {
+  width: 150px;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
 /* --------------------------------- MOBILESITE --------------------------------- */
 @media only screen and (max-width: 800px) {
   .svampe {
@@ -119,5 +152,15 @@ header {
 
   .løvtræ {
     display: none;
+  }
+  .main_svampeliste {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  body {
+    background-image: inherit;
+    background-color: #f0e6da;
   }
 }
