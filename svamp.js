@@ -15,11 +15,11 @@ function singleSvamp(enkeltSvamp) {
   console.log(svamp);
 
   document.querySelector("h1").textContent = svamp.name;
-  document.querySelector(".season").textContent = svamp.season;
+  document.querySelector(".season").textContent = svamp.season.join(", ");
   document.querySelector(".description").textContent = svamp.description;
   document.querySelector(".location_description").textContent = svamp.location_description;
-  document.querySelector(".location").textContent = svamp.location;
-  document.querySelector(".months").textContent = svamp.months;
+  document.querySelector(".location").textContent = svamp.location.join(", ");
+  document.querySelector(".months").textContent = svamp.months.join(", ");
   document.querySelector(".sankning").textContent = svamp.sankning;
   document.querySelector(".handling").textContent = svamp.handling;
   document.querySelector(".application").textContent = svamp.application;
