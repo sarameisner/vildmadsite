@@ -2,8 +2,6 @@ const urlParams = new URLSearchParams(window.location.search);
 
 const season = urlParams.get("Season");
 
-console.log(season);
-
 //fetch(`https://auovcezakqpcoioboayh.supabase.co/rest/v1/mushrooms?season=eg.${season[0]}`, {
 fetch(`https://auovcezakqpcoioboayh.supabase.co/rest/v1/mushrooms?season=cs.%5B%22${season}%22%5D`, {
   method: "GET",
