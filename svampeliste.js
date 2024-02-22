@@ -25,6 +25,8 @@ function dateRecevied(data) {
 
   // Kalder funktionen 'svampeliste' for hvert element i de modtagne data.
   data.forEach(svampeliste);
+
+  document.querySelector(".heading").textContent = season;
 }
 
 // Funktionen, der bruges til at generere HTML-elementer baseret på svampedataene og tilføje dem til DOM'en.
@@ -42,7 +44,7 @@ function svampeliste(svampe) {
   const id = svampe.id;
 
   // Opdaterer linket for hver svamp for at pege på en individuel side for den pågældende svamp.
-  clone.querySelector(".enkeltesvampe").href = `svamp.html?id=${id}`;
+  clone.querySelector(".enkeltesvampe").href = `svamp.html?Season=${season}&id=${id}`;
 
   // Opdaterer titlen for hver svamp.
   clone.querySelector("h2").textContent = svampe.name;
@@ -51,6 +53,6 @@ function svampeliste(svampe) {
   clone.querySelector("img").src = svampe.image;
 
   // Tilføjer det klonede HTML-element til DOM'en.
-  const parentElement = document.querySelector("main");
+  const parentElement = document.querySelector(".main_svampeliste");
   parentElement.appendChild(clone);
 }
