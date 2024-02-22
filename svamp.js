@@ -1,4 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search);
+const season = urlParams.get("Season");
 const id = urlParams.get("id");
 
 fetch(`https://auovcezakqpcoioboayh.supabase.co/rest/v1/mushrooms?id=eq.${id}`, {
@@ -9,6 +10,8 @@ fetch(`https://auovcezakqpcoioboayh.supabase.co/rest/v1/mushrooms?id=eq.${id}`, 
 })
   .then((response) => response.json())
   .then((data) => singleSvamp(data));
+
+document.querySelector(".backbuttonlink").href = `svampeliste.html?Season=${season}`;
 
 function singleSvamp(enkeltSvamp) {
   const svamp = enkeltSvamp[0];
